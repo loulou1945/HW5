@@ -50,7 +50,7 @@ public class Main {
         //Задача 8
         System.out.println("Задача №8");
         int annualSavings = 0;
-        for (int i = 1; i <= 12; i++ ) {
+        for (int i = 1; i <= 12; i++) {
             annualSavings += 29000;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + annualSavings + " рублей");
         }
@@ -60,7 +60,7 @@ public class Main {
         DecimalFormat df = new DecimalFormat("0.00");
         float annualSaving = 10000;
         System.out.println("Начальная сумма " + annualSaving);
-        for (int i = 1; i <= 12; i++ ) {
+        for (int i = 1; i <= 12; i++) {
             annualSaving = annualSaving + annualSaving * 1 / 100;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + df.format(annualSaving) + " рублей");
         }
@@ -69,8 +69,8 @@ public class Main {
         System.out.println("Задача №10");
         int number = 2;
         for (int i = 1; i <= 10; i++) {
-            System.out.println("2*" + i + "=" + number);
-            number = 2 * (i + 1);
+            System.out.println(number + "*" + i + "=" + number * i);
+
         }
     }
 }
